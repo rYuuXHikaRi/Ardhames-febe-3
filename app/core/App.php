@@ -1,7 +1,7 @@
 <?php 
 
 class App{
-    protected $controller ='Kategori';
+    protected $controller ='Login';
     protected $method ='index';
     protected $params =[];
 
