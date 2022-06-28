@@ -4,7 +4,7 @@
                     <div class="container mt-4 mb-3">
                         <div class="col">
                             <div class="box-abt">
-                                <img src="../../plugins/img/pp.jpg" width="250" height="250" style="margin-left: 70px;">
+                                <img src="../../../public/plugins/img/pp.jpg" width="250" height="250" style="margin-left: 70px;">
                                 <p class="fs-5 text-center"><b>Kelompok 3 FE-BE Ardhames</b></p>
                                 <ul>
                                     <li>Alvin</li>
