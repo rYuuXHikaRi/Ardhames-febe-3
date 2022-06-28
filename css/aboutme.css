@@ -1,0 +1,8 @@
+.box-abt {
+    width: 400px;
+    min-height: 480px;
+    padding: 5px;
+    margin-left: 380px;
+    border-radius: 15px;
+    background-color: white;
+}
