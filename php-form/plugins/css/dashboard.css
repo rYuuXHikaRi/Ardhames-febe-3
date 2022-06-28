@@ -1,0 +1,25 @@
+.content {
+    background-color: #eeeeee;
+}
+
+.content-padding {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.box-db {
+    text-align: center;
+    max-width: 300px;
+    min-height: 300px;
+    border-radius: 15px;
+    background-color: #4b63f7;
+}
+
+.box-db-title {
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
+.box-db-number {
+    font-size: 7rem;
+}
