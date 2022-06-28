@@ -1,0 +1,82 @@
+<?php 
+
+class BukuModel{
+	private $table ='buku';
+	private $db;
+
+	public function __construct(){
+		$this->db = new Database;
+
+	}
+
+	public function getAllBuku(){
+		$this->db->query("SELECT buku.*,kategori.nama_kategori FROM ". $this->table ." JOIN kategori ON kategori.id =buku.kategori_id");
+		return $this->db->resultSet();
+
+	}
+
+	public function getBukuById($id){
+		$this->db->query('SELECT * FROM '.$this->table. ' WHERE id=:id');
+		$this->db->bind('id',$id);
+		
+		return $this->db->single();
+
+	}
+
+	public function tambahBuku($data){
+		$query="INSERT INTO buku (judul,penerbit,pengarang,isbn,kategori_id) VALUES (:judul,:penerbit,:pengarang,:isbn,:kategori_id)";
+		$this->db->query($query);
+		$this->db->bind('judul',$data['judul']);
+		$this->db->bind('penerbit',$data['penerbit']);
+		$this->db->bind('pengarang',$data['pengarang']);
+		$this->db->bind('isbn',$data['isbn']);
+		$this->db->bind('kategori_id',$data['kategori_id']);
+		$this->db->execute();
+
+		return $this->db->rowCount();
+
+	}
+
+	public function updateDataBuku($data){
+		$query = "UPDATE buku SET judul=:judul,penerbit=:penerbit,pengarang=:pengarang,isbn=:isbn,kategori_id=:kategori_id WHERE id=:id";
+		$this->db->query($query);
+		$this->db->bind('id',$data['id']);
+		$this->db->bind('judul',$data['judul']);
+		$this->db->bind('penerbit',$data['penerbit']);
+		$this->db->bind('pengarang',$data['pengarang']);
+		$this->db->bind('isbn',$data['isbn']);
+		$this->db->bind('kategori_id',$data['kategori_id']);
+		$this->db->execute();
+
+		return $this->db->rowCount();
+
+	}
+
+	public function deleteKategori($id){
+		$this->db->query('DELETE FROM '. $this->table. ' WHERE id=:id');
+		$this->db->bind('id',$id);
+		$this->db->execute();
+
+		return $this->db->rowCount();
+
+
+	}
+
+
+	public function cariBuku(){
+		$key=$_POST['key'];
+		$this->db->query("SELECT * FROM ".$this->table." JOIN kategori ON kategori.id =buku.kategori_id WHERE judul LIKE :key");
+		$this->db->bind('key',"%$key%");
+		return $this->db->resultSet();
+	}
+
+	public function deleteBuku($id){
+		$this->db->query('DELETE FROM '.$this->table.' WHERE id=:id');
+		$this->db->bind('id',$id);
+		$this->db->execute();
+
+		return $this->db->rowCount();
+	}
+
+
+}
