@@ -3,30 +3,3 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
-
-.navbar {
-    background-color: #06283D;
-}
-
-.logout {
-    background-color: #242F9B;
-}
-.logout:hover {
-    background-color: #141b57;
-}
-
-.sidebar {
-    background-color: #24309bc2;
-    color: aliceblue;
-}
-.list:hover {
-    background-color: #1d277bc2;
-    border-radius: 10px;
-    padding-right: 2rem;
-
-}
-
-.content {
-    background-color: #DFF6FF;
-
-}

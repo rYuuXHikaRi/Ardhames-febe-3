@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Dashboard</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--Navbar-->
+        <div class="row flex-nowrap">
+            <nav class="navbar shadow-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light" href="#"><i class="p-2 fs-3 bi bi-info-square-fill"></i>
+                        <span class="pe-auto fw-bold">Buku Kita</span></a>
+                    <div class="pe-auto rounded-5 logout">
+                        <a class="nav-link text-light" href="/logout">
+                            <i class="p-4 pe-1 fs-3 bi bi-box-arrow-right"></i>
+                            <span class="pe-3 pb-3 pt-0">Logout</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--Sidebar and Content-->
+        <div class="row flex-nowrap">
+            <!--Sidebar-->
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 sidebar">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li class="list">
+                            <a href="#" data-bs-toggle="collapse" class="nav-link text-dark px-0 align-middle">
+                                <i class="fs-3 bi-speedometer2"></i> <span
+                                    class="ms-3 d-none d-sm-inline"></span> </a>
+                                <p class="text-dark">Dashboard</p>
+                        </li>
+                        <li class="list">
+                            <a href="#" data-bs-toggle="collapse" class="nav-link  text-dark px-0 align-middle">
+                                <i class="fs-3 bi bi-tags"></i> <span
+                                    class="ms-3 d-none d-sm-inline"></span> </a>
+                            <p class="text-dark">Kategori</p>
+                        </li>
+                        <li class="list">
+                            <a href="#" data-bs-toggle="collapse" class="nav-link text-dark px-0 align-middle">
+                                <i class="fs-3 bi bi-book"></i></i> <span
+                                    class="ms-3 d-none d-sm-inline"></span> </a>
+                                <p class="text-dark">Buku</p>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link text-dark px-0 align-middle">
+                                <i class="fs-3 bi bi-person-circle"></i> <span
+                                    class="fs-4 ms-3 d-none d-sm-inline"></span> </a>
+                            <p class="text-dark">About Me</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Sidebar until here-->
+
+            <!--Content-->
+            <div class="col pe-0 ps-0 content mt-10">
+                <div class="row content-padding">
+                    <div class="container mt-4 mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h1>Dashboard</h1>
+                            </div>
+                            <div class="card-body">
+                                <p>Panel admin untuk Buku Kita</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row content-padding"> 
+                    <div class="container mt-2">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Database</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col" style="margin-left: 200px;">
+                                        <div class="box-db">
+                                            <div class="box-db-title">
+                                                <p>Jumlah Buku</p>
+                                            </div>
+                                            <div class="box-db-number">
+                                                <p>999</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col" style="margin-right: 180px;">
+                                        <div class="box-db">
+                                            <div class="box-db-title">
+                                                <p>Jumlah Kategori</p>
+                                            </div>
+                                            <div class="box-db-number">
+                                                <p>333</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Content until here-->
+
+        <!--Footer-->
+        <footer class="row text-center fixed-bottom" style="background-color: blueviolet;">
+            <p><b>Bukita 2019</b> All rights reserved.</p>
+        </footer>
+    </div>
+    <script src=""></script>
+    <script src=""></script>
+    <script src=""></script>
+    <script src=""></script>
+</body>
+
+</html>
+<!--Footer until here-->
