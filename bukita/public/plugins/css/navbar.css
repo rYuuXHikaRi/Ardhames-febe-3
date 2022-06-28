@@ -1,0 +1,10 @@
+.navbar {
+    background-color: #06283D;
+}
+
+.logout {
+    background-color: #242F9B;
+}
+.logout:hover {
+    background-color: #141b57;
+}
